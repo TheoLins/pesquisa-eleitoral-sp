@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Votação Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        
+        <!-- NOVO LADO ESQUERDO: Painel de Resumo de Cargos -->
+        <aside class="summary-panel">
+            <!-- Cabeçalho do Painel de Resumo com a Bandeira em Alta Definição -->
+<div class="summary-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg?utm_source=pt.wikisource.org&utm_campaign=index&utm_content=original" alt="Bandeira de São Paulo" class="state-flag">
+    <h2>SÃO PAULO</h2>
+</div>
+
+            
+            <div class="summary-box">
+                <h3>Resumo de Cargos</h3>
+                <div class="summary-table">
+                    <div class="table-header">
+                        <span>Cargo</span>
+                        <span class="badge-qty-header">Quantidade</span>
+                    </div>
+                    <div class="table-row"><span>Governador</span> <span class="badge-qty">7</span></div>
+                    <div class="table-row"><span>Vice-governador</span> <span class="badge-qty">10</span></div>
+                    <div class="table-row"><span>Senador</span> <span class="badge-qty">16</span></div>
+                    <div class="table-row"><span>1º Suplente</span> <span class="badge-qty">18</span></div>
+                    <div class="table-row"><span>2º Suplente</span> <span class="badge-qty">16</span></div>
+                    <div class="table-row"><span>Deputado Federal</span> <span class="badge-qty select-green">1.131</span></div>
+                    <div class="table-row"><span>Deputado Estadual</span> <span class="badge-qty select-green">1.430</span></div>
+                    <div class="table-row total-row"><span>Total</span> <span class="badge-qty select-blue">2.628</span></div>
+                </div>
+                <div class="summary-footer-icon">👥</div>
+            </div>
+        </aside>
+
+        <!-- CENTRO: A aplicação da Colinha -->
+        <div class="container">
+            <header class="header">
+                <h1>NO DIA 04/10, LEVE A COLA!</h1>
+                <p>Anote os números de suas candidatas ou candidatos aqui</p>
+                <div class="wave"></div>
+            </header>
+
+            <main class="content">
+                <!-- Deputado Federal -->
+                <div class="cargo-group" data-cargo="federal">
+                    <h2>DEPUTADA OU DEPUTADO FEDERAL</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deputado Estadual -->
+                <div class="cargo-group" data-cargo="estadual">
+                    <h2>DEPUTADA OU DEPUTADO ESTADUAL</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senador 1 -->
+                <div class="cargo-group" data-cargo="senador1">
+                    <h2>SENADORA OU SENADOR (1ª vaga)</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senador 2 -->
+                <div class="cargo-group" data-cargo="senador2">
+                    <h2>SENADORA OU SENADOR (2ª vaga)</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Governador -->
+                <div class="cargo-group" data-cargo="governador">
+                    <h2>GOVERNADORA OU GOVERNADOR</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presidente -->
+                <div class="cargo-group" data-cargo="presidente">
+                    <h2>PRESIDENTE DA REPÚBLICA</h2>
+                    <div class="row-layout">
+                        <div class="inputs">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                            <input type="text" maxlength="1" inputmode="numeric">
+                        </div>
+                        <div class="candidate-photo">
+                            <img src="" alt="Foto">
+                        </div>
+                    </div>
+                </div>
+
+                <button id="btn-cadastrar" class="btn-cadastrar">CADASTRAR VOTO</button>
+            </main>
+        </div>
+
+        <!-- LADO DIREITO: Painel de Apuração Acumulada -->
+        <div class="charts-panel">
+            <h3>📊 Apuração dos Votos Computados</h3>
+            <p class="instruction-text">Nenhum voto cadastrado ainda. Insira os dados e clique em "Cadastrar Voto".</p>
+            <div id="charts-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
