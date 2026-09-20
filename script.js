@@ -18,15 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
         senador1: { 
             titulo: "Senador (1ª vaga)", 
             lista: { 
-                "123": { nome: "Ricardo Oliveira (PLOG)", fotoUrl: "https://unsplash.com" }, 
-                "789": { nome: "Sandra Melo (PTEC)", fotoUrl: "https://unsplash.com" } 
+                "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br/images/a/6059/b2ap3_large_Plenrio-Andr-do-Prado-site.jpg" }, 
+                "400": { nome: "Simode Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" } 
             } 
         },
         senador2: { 
             titulo: "Senador (2ª vaga)", 
             lista: { 
-                "456": { nome: "Fernanda Rocha (PFLA)", fotoUrl: "https://unsplash.com" }, 
-                "234": { nome: "Marcos Viana (PLOG)", fotoUrl: "https://unsplash.com" } 
+                "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br/images/a/6059/b2ap3_large_Plenrio-Andr-do-Prado-site.jpg" }, 
+                "400": { nome: "Simode Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" } 
             } 
         },
         governador: { 
