@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             titulo: "Governador", 
             lista: { 
                 "10": { nome: "Tarcísio de Freitas (Republicanos)", fotoUrl: "https://media.gettyimages.com/id/2275918993/pt/foto/tarcisio-de-freitas-governor-of-so-paulo-speaks-during-a-campaign-launch-for-guilherme-derrite.jpg?s=594x594&w=gi&k=20&c=BaO1cmWaNTMIiMy8KKyg_JmcLK3HNsJB_Qz9rDH5qoQ=" }, 
-                "13": { nome: "Fernando Haddad (PLOG)", fotoUrl: "https://media.gettyimages.com/id/2248000821/pt/foto/the-president-of-brazil-luiz-inacio-lula-da-silva-and-the-minister-of-finance-fernando-haddad.jpg?s=594x594&w=gi&k=20&c=_WEstkDzsPylqKA4tjMH_UBV2QxKACgbFVuGsr98my8=" } 
+                "13": { nome: "Fernando Haddad (PT)", fotoUrl: "https://media.gettyimages.com/id/2248000821/pt/foto/the-president-of-brazil-luiz-inacio-lula-da-silva-and-the-minister-of-finance-fernando-haddad.jpg?s=594x594&w=gi&k=20&c=_WEstkDzsPylqKA4tjMH_UBV2QxKACgbFVuGsr98my8=" } 
             } 
         },
         presidente: { 
