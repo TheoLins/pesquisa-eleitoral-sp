@@ -6,8 +6,8 @@ function newFunction() {
             federal: {
                 titulo: "Deputado Federal",
                 lista: {
-                    "1234": { nome: "Ana Silva (PFLA)", fotoUrl: "https://unsplash.com" },
-                    "5678": { nome: "Carlos Lima (PTEC)", fotoUrl: "https://unsplash.com" }
+                    "2208": { nome: "Mario Farias (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/220655.jpg" },
+                    "2250": { nome: "Major Vitor Santos (PL)", fotoUrl: "https://www.cmsandre.sp.gov.br/wp-content/uploads/2025/02/major-site-1.jpg" }
                 }
             },
             estadual: {
