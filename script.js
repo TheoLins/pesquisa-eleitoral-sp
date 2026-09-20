@@ -28,7 +28,7 @@ function newFunction() {
                 titulo: "Senador (2ª vaga)",
                 lista: {
                     "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br/images/a/6059/b2ap3_large_Plenrio-Andr-do-Prado-site.jpg" },
-                    "400": { nome: "Simode Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" }
+                    "400": { nome: "Simone Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" }
                 }
             },
             governador: {
