@@ -20,8 +20,8 @@ function newFunction() {
             senador1: {
                 titulo: "Senador (1ª vaga)",
                 lista: {
-                    "300": { nome: "Ricardo Sales (NOVO)", fotoUrl: "https://novo.org.br/wp-content/uploads/2026/07/salles-intencao-voto-senado-blogpost-1-1536x864.jpg" },
-                    "789": { nome: "Sandra Melo (PTEC)", fotoUrl: "" }
+                    "300": { nome: "Ricardo Sales (NOVO)", fotoUrl: "https://oeco.org.br/wp-content/uploads/2019/06/Ricardo-Salles-Foto-Marcelo-Camargo-Ag%C3%AAncia-Brasil.jpg" },
+                    "232": { nome: "Soninha Francine (Cidadania)", fotoUrl: "https://www.brasildefato.com.br/wp-content/uploads/2026/09/soninha-6d3db0ec.webp" }
                 }
             },
             senador2: {
