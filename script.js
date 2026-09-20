@@ -20,8 +20,8 @@ function newFunction() {
             senador1: {
                 titulo: "Senador (1ª vaga)",
                 lista: {
-                    "123": { nome: "Ricardo Oliveira (PLOG)", fotoUrl: "https://unsplash.com" },
-                    "789": { nome: "Sandra Melo (PTEC)", fotoUrl: "https://unsplash.com" }
+                    "300": { nome: "Ricardo Sales (NOVO)", fotoUrl: "https://novo.org.br/wp-content/uploads/2026/07/salles-intencao-voto-senado-blogpost-1-1536x864.jpg" },
+                    "789": { nome: "Sandra Melo (PTEC)", fotoUrl: "" }
                 }
             },
             senador2: {
