@@ -13,8 +13,8 @@ function newFunction() {
             estadual: {
                 titulo: "Deputado Estadual",
                 lista: {
-                    "12345": { nome: "Julia Costa (PUNI)", fotoUrl: "https://unsplash.com" },
-                    "67890": { nome: "Roberto Dias (PFLA)", fotoUrl: "https://unsplash.com" }
+                    "22090": { nome: "Nina Braga (PL)", fotoUrl: "https://ninabraga.com.br/wp-content/uploads/2025/05/IMG_2050-min.jpg" },
+                    "22422": { nome: "Paulo Mansur (PL)", fotoUrl: "https://www3.al.sp.gov.br/repositorio/noticia/N-03-2024/fg320581.jpg    " }
                 }
             },
             senador1: {
