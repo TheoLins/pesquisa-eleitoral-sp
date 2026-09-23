@@ -7,7 +7,7 @@ function newFunction() {
                 titulo: "Deputado Federal",
                 lista: {
                     "2208": { nome: "Mario Farias (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/220655.jpg" },
-                    "2200": { nome: "JOSE AUGUSTO ROSA", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/178829.jpg" }
+                    "2200": { nome: "José Augusto Rosa (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/178829.jpg" }
                 }
             },
             estadual: {
