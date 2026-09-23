@@ -20,7 +20,7 @@ function newFunction() {
             senador1: {
                 titulo: "Senador (1ª vaga)",
                 lista: {
-                    "300": { nome: "Ricardo Sales (NOVO)", fotoUrl: "https://oeco.org.br/wp-content/uploads/2019/06/Ricardo-Salles-Foto-Marcelo-Camargo-Ag%C3%AAncia-Brasil.jpg" },
+                    "111": { nome: "Guilherme Derrite (PP)", fotoUrl: "https://www.brasildefato.com.br/wp-content/uploads/2025/11/img20251111183123940.jpg" },
                     "232": { nome: "Soninha Francine (Cidadania)", fotoUrl: "https://www.brasildefato.com.br/wp-content/uploads/2026/09/soninha-6d3db0ec.webp" }
                 }
             },
