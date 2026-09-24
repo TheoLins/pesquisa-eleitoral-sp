@@ -6,43 +6,43 @@ function newFunction() {
             federal: {
                 titulo: "Deputado Federal",
                 lista: {
-                    "2208": { nome: "Mario Farias (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/220655.jpg" },
-                    "2200": { nome: "José Augusto Rosa (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/178829.jpg" }
+                    "2208": { nome: "Mario Farias (PL)", fotoUrl: "https://camara.leg.br" },
+                    "2200": { nome: "José Augusto Rosa (PL)", fotoUrl: "https://camara.leg.br" }
                 }
             },
             estadual: {
                 titulo: "Deputado Estadual",
                 lista: {
-                    "22090": { nome: "Nina Braga (PL)", fotoUrl: "https://ninabraga.com.br/wp-content/uploads/2025/05/IMG_2050-min.jpg" },
-                    "22422": { nome: "Paulo Mansur (PL)", fotoUrl: "https://www3.al.sp.gov.br/repositorio/noticia/N-03-2024/fg320581.jpg    " }
+                    "22090": { nome: "Nina Braga (PL)", fotoUrl: "https://ninabraga.com.br" },
+                    "22422": { nome: "Paulo Mansur (PL)", fotoUrl: "https://al.sp.gov.br    " }
                 }
             },
             senador1: {
                 titulo: "Senador (1ª vaga)",
                 lista: {
-                    "111": { nome: "Guilherme Derrite (PP)", fotoUrl: "https://www.brasildefato.com.br/wp-content/uploads/2025/11/img20251111183123940.jpg" },
-                    "232": { nome: "Soninha Francine (Cidadania)", fotoUrl: "https://www.brasildefato.com.br/wp-content/uploads/2026/09/soninha-6d3db0ec.webp" }
+                    "111": { nome: "Guilherme Derrite (PP)", fotoUrl: "https://brasildefato.com.br" },
+                    "232": { nome: "Soninha Francine (Cidadania)", fotoUrl: "https://brasildefato.com.br" }
                 }
             },
             senador2: {
                 titulo: "Senador (2ª vaga)",
                 lista: {
-                    "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br/images/a/6059/b2ap3_large_Plenrio-Andr-do-Prado-site.jpg" },
-                    "400": { nome: "Simone Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" }
+                    "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br" },
+                    "400": { nome: "Simone Tebet (PSB)", fotoUrl: "https://senado.leg.br" }
                 }
             },
             governador: {
                 titulo: "Governador",
                 lista: {
-                    "10": { nome: "Tarcísio de Freitas (Republicanos)", fotoUrl: "https://media.gettyimages.com/id/2275918993/pt/foto/tarcisio-de-freitas-governor-of-so-paulo-speaks-during-a-campaign-launch-for-guilherme-derrite.jpg?s=594x594&w=gi&k=20&c=BaO1cmWaNTMIiMy8KKyg_JmcLK3HNsJB_Qz9rDH5qoQ=" },
-                    "13": { nome: "Fernando Haddad (PT)", fotoUrl: "https://media.gettyimages.com/id/2248000821/pt/foto/the-president-of-brazil-luiz-inacio-lula-da-silva-and-the-minister-of-finance-fernando-haddad.jpg?s=594x594&w=gi&k=20&c=_WEstkDzsPylqKA4tjMH_UBV2QxKACgbFVuGsr98my8=" }
+                    "10": { nome: "Tarcísio de Freitas (Republicanos)", fotoUrl: "https://gettyimages.com" },
+                    "13": { nome: "Fernando Haddad (PT)", fotoUrl: "https://gettyimages.com" }
                 }
             },
             presidente: {
                 titulo: "Presidente da República",
                 lista: {
-                    "22": { nome: "Fávio Bolsonaro (PL)", fotoUrl: "https://media.gettyimages.com/id/2281624229/pt/foto/brazilian-senator-and-presidential-hopeful-flavio-bolsonaro-presents-a-proposal-to-combat.jpg?s=594x594&w=gi&k=20&c=jcvUpIOeE_7MNr4Johfl9KDwGqgLTP2ubpIwkxR2jq4=" },
-                    "13": { nome: "Lula Inácio da Silva (PT)", fotoUrl: "https://media.gettyimages.com/id/2185130946/pt/foto/rio-de-janeiro-brazil-president-of-brazil-luis-in%C3%A1cio-lula-da-silva-gestures-during-the.jpg?s=594x594&w=gi&k=20&c=j5b8c1sbrwNJMZYRBqNr5-MD8iefJY6mdkaSrhmOWXQ=" }
+                    "22": { nome: "Fávio Bolsonaro (PL)", fotoUrl: "https://gettyimages.com" },
+                    "13": { nome: "Lula Inácio da Silva (PT)", fotoUrl: "https://gettyimages.com" }
                 }
             }
         };
@@ -87,7 +87,7 @@ function newFunction() {
             });
         });
 
-        // 2. LINHAS SUBSTITUÍDAS: Nova função que aplica o link da fotoUrl no quadrado do HTML
+        // 2. LINHAS SUBSTITUÍDAS: Nova função que aplica o link da fotoUrl no quadrado do HTML com validação de número inválido
         function verificarFoto(inputs, cargoType, container, img) {
             let numero = "";
             let completo = true;
@@ -98,10 +98,19 @@ function newFunction() {
 
                 if (candidato) {
                     img.src = candidato.fotoUrl; // Aplica o link real da imagem configurada acima
+                    container.classList.add("active");
                 } else {
-                    img.src = "https://placeholder.com"; // Link de fallback para voto nulo
+                    // Alerta caso o número digitado não exista na tabela/código
+                    alert("Número inválido! Tente os numeros na tabela a esquerda!");
+                    
+                    // Limpa apenas as caixas do bloco atual para redigitação
+                    inputs.forEach(i => i.value = "");
+                    
+                    // Coloca o cursor de volta na primeira caixinha do bloco
+                    if (inputs.length > 0) inputs[0].focus();
+                    
+                    container.classList.remove("active");
                 }
-                container.classList.add("active");
             } else {
                 container.classList.remove("active");
             }
@@ -109,6 +118,8 @@ function newFunction() {
 
         // Ação ao clicar em CADASTRAR VOTO
         btnCadastrar.addEventListener("click", () => {
+            let erroDetectado = false;
+
             cargoGroups.forEach(group => {
                 const cargoType = group.getAttribute("data-cargo");
                 const inputs = group.querySelectorAll(".inputs input");
@@ -117,9 +128,15 @@ function newFunction() {
                 inputs.forEach(i => numero += i.value);
 
                 if (numero) {
-                    // 3. LINHA AJUSTADA: Como agora lista é um objeto, pegamos apenas a propriedade .nome dele
                     const candidatoObj = candidatosData[cargoType].lista[numero];
-                    const nomeCandidato = candidatoObj ? candidatoObj.nome : "Brancos/Nulos/Outros";
+                    
+                    // Trava de segurança: se o número digitado não existir, impede o cadastro do bloco
+                    if (!candidatoObj) {
+                        erroDetectado = true;
+                        return;
+                    }
+
+                    const nomeCandidato = candidatoObj.nome;
 
                     if (!votosComputados[cargoType].candidatos[nomeCandidato]) {
                         votosComputados[cargoType].candidatos[nomeCandidato] = 0;
@@ -129,6 +146,12 @@ function newFunction() {
                     votosComputados[cargoType].total++;
                 }
             });
+
+            // Se houver algum número inválido não corrigido, não limpa a tela e interrompe o envio
+            if (erroDetectado) {
+                alert("Por favor, corrija os números inválidos antes de cadastrar!");
+                return;
+            }
 
             document.querySelectorAll(".inputs input").forEach(input => input.value = "");
             document.querySelectorAll(".candidate-photo").forEach(p => p.classList.remove("active"));
@@ -174,4 +197,3 @@ function newFunction() {
         }
     });
 }
-
