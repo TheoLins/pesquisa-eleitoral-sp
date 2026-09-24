@@ -4,7 +4,7 @@ function newFunction() {
         // 1. LINHAS SUBSTITUÍDAS: Agora cada número tem um nome E um link de foto (fotoUrl)
         const candidatosData = {
             federal: {
-                titulo: "Deputado Federal",
+                                titulo: "Deputado Federal",
                 lista: {
                     "2208": { nome: "Mario Farias (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/220655.jpg" },
                     "2200": { nome: "José Augusto Rosa (PL)", fotoUrl: "https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/178829.jpg" }
@@ -28,7 +28,7 @@ function newFunction() {
                 titulo: "Senador (2ª vaga)",
                 lista: {
                     "222": { nome: "André do Prado (PL)", fotoUrl: "https://diariodejacarei.com.br/images/a/6059/b2ap3_large_Plenrio-Andr-do-Prado-site.jpg" },
-                    "400": { nome: "Simone Tebet (PSB)", fotoUrl: "https://senado.leg.br" }
+                    "400": { nome: "Simone Tebet (PSB)", fotoUrl: "https://www12.senado.leg.br/noticias/materias/2022/02/15/simone-tebet-se-despede-da-lideranca-da-bancada-feminina-e-cobra-politicas-em-defesa-das-mulheres/20220215_01036jr.jpg/" }
                 }
             },
             governador: {
@@ -42,8 +42,7 @@ function newFunction() {
                 titulo: "Presidente da República",
                 lista: {
                     "22": { nome: "Fávio Bolsonaro (PL)", fotoUrl: "https://media.gettyimages.com/id/2281624229/pt/foto/brazilian-senator-and-presidential-hopeful-flavio-bolsonaro-presents-a-proposal-to-combat.jpg?s=594x594&w=gi&k=20&c=jcvUpIOeE_7MNr4Johfl9KDwGqgLTP2ubpIwkxR2jq4=" },
-                    "13": { nome: "Lula Inácio da Silva (PT)", fotoUrl: "https://media.gettyimages.com/id/2185130946/pt/foto/rio-de-janeiro-brazil-president-of-brazil-luis-in%C3%A1cio-lula-da-silva-gestures-during-the.jpg?s=594x594&w=gi&k=20&c=j5b8c1sbrwNJMZYRBqNr5-MD8iefJY6mdkaSrhmOWXQ=" }
-                }
+                    "13": { nome: "Lula Inácio da Silva (PT)", fotoUrl: "https://media.gettyimages.com/id/2185130946/pt/foto/rio-de-janeiro-brazil-president-of-brazil-luis-in%C3%A1cio-lula-da-silva-gestures-during-the.jpg?s=594x594&w=gi&k=20&c=j5b8c1sbrwNJMZYRBqNr5-MD8iefJY6mdkaSrhmOWXQ=" }                }
             }
         };
 
